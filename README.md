@@ -12,7 +12,7 @@ In computer vision, transfer learning is usually expressed through the use of pr
 ## VGG16 model
 VGG16 is a convolutional neural network model proposed by K. Simonyan and A. Zisserman from the University of Oxford in the paper “Very Deep Convolutional Networks for Large-Scale Image Recognition”. The model achieves 92.7% top-5 test accuracy in ImageNet, which is a dataset of over 14 million images belonging to 1000 classes. It was one of the famous model submitted to ILSVRC-2014. It makes the improvement over AlexNet by replacing large kernel-sized filters (11 and 5 in the first and second convolutional layer, respectively) with multiple 3×3 kernel-sized filters one after another. VGG16 was trained for weeks and was using NVIDIA Titan Black GPU’s.
 
-![](https://github.umn.edu/MITTA098/Kaggle-Competition-Cat-Dog-Classification/blob/master/Architecture_VGG16.png)
+![](https://github.umn.edu/AnirudhMittal4/Kaggle-Competition-Cat-Dog-Classification/blob/master/Architecture_VGG16.png)
 
 The input to cov1 layer is of fixed size 224 x 224 RGB image. The image is passed through a stack of convolutional (conv.) layers, where the filters were used with a very small receptive field: 3×3 (which is the smallest size to capture the notion of left/right, up/down, center). In one of the configurations, it also utilizes 1×1 convolution filters, which can be seen as a linear transformation of the input channels (followed by non-linearity). The convolution stride is fixed to 1 pixel; the spatial padding of conv. layer input is such that the spatial resolution is preserved after convolution, i.e. the padding is 1-pixel for 3×3 conv. layers. Spatial pooling is carried out by five max-pooling layers, which follow some of the conv.  layers (not all the conv. layers are followed by max-pooling). Max-pooling is performed over a 2×2 pixel window, with stride 2.
 
@@ -20,4 +20,4 @@ Three Fully-Connected (FC) layers follow a stack of convolutional layers (which 
 
 ## Results
 
-![](https://github.umn.edu/MITTA098/Kaggle-Competition-Cat-Dog-Classification/blob/master/Kaggle_Result.png)
+![](https://github.com/AnirudhMittal4/Kaggle-Competition-Cat-Dog-Classification/blob/master/Kaggle_Result.png)
